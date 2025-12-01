@@ -1,0 +1,12 @@
+version: v2
+
+plugins:
+  # Generates Go types for messages and enums.
+  - remote: buf.build/protocolbuffers/go
+    out: gen
+    opt: paths=source_relative
+
+  # Generates gRPC client/server stubs for Go.
+  - remote: buf.build/grpc/go
+    out: gen
+    opt: paths=source_relative

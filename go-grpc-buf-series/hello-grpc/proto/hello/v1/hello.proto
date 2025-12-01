@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package hello.v1;
+
+// go_package defines the Go import path where code for this file will live.
+// The Go generator derives the package name from this path. The official guide
+// discourages adding a ';package_name' suffix, so prefer shaping the path itself.
+// Docs: https://protobuf.dev/reference/go/go-generated/
+option go_package = "github.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hellov1";
+
+service GreeterService {
+  rpc SayHello (SayHelloRequest) returns (SayHelloResponse);
+}
+
+message SayHelloRequest {
+  string name = 1; // Field numbers are part of the wire format; never reuse them.
+}
+
+message SayHelloResponse {
+  string message = 1;
+}
