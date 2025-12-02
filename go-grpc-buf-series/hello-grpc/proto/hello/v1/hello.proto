@@ -6,7 +6,7 @@ package hello.v1;
 // The Go generator derives the package name from this path. The official guide
 // discourages adding a ';package_name' suffix, so prefer shaping the path itself.
 // Docs: https://protobuf.dev/reference/go/go-generated/
-option go_package = "github.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hellov1";
+option go_package = "github.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hello/v1";
 
 service GreeterService {
   rpc SayHello (SayHelloRequest) returns (SayHelloResponse);

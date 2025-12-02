@@ -4,7 +4,7 @@
 // 	protoc        (unknown)
 // source: hello/v1/hello.proto
 
-package hellov1
+package v1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -119,7 +119,7 @@ const file_hello_v1_hello_proto_rawDesc = "" +
 	"\x10SayHelloResponse\x12\x18\n" +
 	"\amessage\x18\x01 \x01(\tR\amessage2S\n" +
 	"\x0eGreeterService\x12A\n" +
-	"\bSayHello\x12\x19.hello.v1.SayHelloRequest\x1a\x1a.hello.v1.SayHelloResponseBCZAgithub.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hellov1b\x06proto3"
+	"\bSayHello\x12\x19.hello.v1.SayHelloRequest\x1a\x1a.hello.v1.SayHelloResponseBDZBgithub.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hello/v1b\x06proto3"
 
 var (
 	file_hello_v1_hello_proto_rawDescOnce sync.Once

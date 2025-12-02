@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	hellov1 "github.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hellov1"
+	hellov1 "github.com/cassius-labs/go-grpc-buf-series/hello-grpc/gen/hello/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
