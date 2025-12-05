@@ -1,0 +1,10 @@
+syntax = "proto3";
+package common.v1;
+
+option go_package = "acme/gen/commonv1";
+
+// Shared error type for cross-domain responses.
+message ErrorStatus {
+  string code = 1;
+  string message = 2;
+}

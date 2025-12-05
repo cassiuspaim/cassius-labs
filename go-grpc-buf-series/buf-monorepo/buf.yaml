@@ -1,0 +1,19 @@
+version: v2
+
+modules:
+  - path: proto/common
+  - path: proto/user
+  - path: proto/billing
+
+deps:
+  - buf.build/googleapis/googleapis
+
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_DIRECTORY_MATCH
+
+breaking:
+  use:
+    - FILE
