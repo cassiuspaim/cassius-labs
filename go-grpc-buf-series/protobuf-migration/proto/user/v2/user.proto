@@ -1,0 +1,32 @@
+syntax = "proto3";
+package user.v2;
+
+option go_package = "acme/gen/userv2";
+
+import "v1/error.proto";
+
+message Profile {
+  string primary_email = 1;
+  repeated string secondary_emails = 2;
+}
+
+enum UserStatus {
+  USER_STATUS_UNSPECIFIED = 0;
+  USER_STATUS_ACTIVE = 1;
+  USER_STATUS_DISABLED = 2;
+}
+
+message User {
+  string id = 1;
+  Profile profile = 2;
+  UserStatus status = 3;
+}
+
+message GetUserRequest {
+  string id = 1;
+}
+
+message GetUserResponse {
+  User user = 1;
+  common.v1.ErrorStatus error = 2;
+}

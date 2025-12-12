@@ -1,0 +1,10 @@
+syntax = "proto3";
+package billing.v1;
+
+option go_package = "acme/gen/billingv1";
+
+import "v1/billing.proto";
+
+service BillingService {
+  rpc GetInvoice(GetInvoiceRequest) returns (GetInvoiceResponse);
+}

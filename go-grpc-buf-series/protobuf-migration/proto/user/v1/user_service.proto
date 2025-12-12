@@ -1,0 +1,10 @@
+syntax = "proto3";
+package user.v1;
+
+option go_package = "acme/gen/userv1";
+
+import "v1/user.proto";
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+}
