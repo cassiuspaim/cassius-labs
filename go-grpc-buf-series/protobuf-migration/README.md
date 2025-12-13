@@ -1,4 +1,4 @@
-# Buf Monorepo (Go gRPC) — Article 2
+# Hands-on Protobuf Evolution: Zero‑Downtime v1→v2 with Buf, Go gRPC, and go:generate
 
 This repository follows the architecture described in the article
 **"Hands-on Buf Monorepo for Go gRPC: A Multi-Module Protobuf Architecture"**.
