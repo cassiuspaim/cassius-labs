@@ -1,4 +1,4 @@
-# North Star Architecture — Reusable Template (Publication-Grade)
+# North Star Architecture — Reusable Template
 
 This document is a **technology-agnostic template** for defining a North Star Architecture: a small, explicit set of principles that guides distributed architectural decisions at scale.
 
